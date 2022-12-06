@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Chinedu">
+
+  <!--page title-->
+  <title> Expenses chart component </title>
+  
+  <!--styling-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main>
+    <section class="header">
+      <div class="balance-section">
+        <div class="balance-text"> My balance </div>
+        <div class="balance"> $921.48 </div>
+      </div>
+
+      <img src="images\logo.svg" alt="logo" class="logo">
+    </section>
+
+    <section class="hero">
+      <div class="hero-heading"> Spending - Last 7 days </div>
+
+      <div class="days-container">
+        <div class="bars-spending-container">
+
+          <div class="sunday container">
+            <div id="sun-spending"></div>
+            <div class="sun bar"></div>
+            <span>sun</span>
+          </div>
+
+          <div class="monday container">
+            <div id="mon-spending"></div>
+            <div class="mon bar"></div>
+            <span>mon</span>
+          </div>
+
+          <div class="tueday container">
+            <div id="tue-spending"></div>
+            <div class="tue bar"></div>
+            <span>&nbsp;tue</span>
+          </div>
+
+          <div class="wednesday container">
+            <div id="wed-spending"></div>
+            <div class="wed bar"></div>
+            <span>wed</span>
+          </div>
+
+          <div class="thursday container">
+            <div id="thu-spending"></div>
+            <div class="thu bar"></div>
+            <span>&nbsp;thu</span>
+          </div>
+
+          <div class="friday container">
+            <div id="fri-spending"></div>
+            <div class="fri bar"></div>
+            <span>&nbsp;fri</span>
+          </div>
+          
+          <div class="saturday container">
+            <div id="sat-spending"></div>
+            <div class="sat bar"></div>
+            <span>&nbsp;sat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="month-spending-container">
+        <div class="current-month-container">
+          <div class="month-heading"> Total this month </div>
+          <div class="month-spending"> $478.33 </div>
+        </div>
+
+        <div class="from-last-month-container">
+          <div class="percentage-spending">+2.4% </div>
+          <div class="percentage-text"> from last month </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!--JavaScript-->
+  <script src="script.js"></script>
+</body>
+</html>

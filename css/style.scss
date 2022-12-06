@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 5%;
+    font-size: 18px;
+    font-family: 'DM Sans';
+
+    main{
+        width: 420px;
+        max-width: 100%;
+
+        section.header{
+            background-color: hsl(10, 79%, 65%);
+            color: white;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 3px ;
+
+            .balance-section{
+                .balance{
+                    font-size: 32px;
+                    font-weight: 700;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+        section.hero{
+            margin-top: 1em;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 3px whitesmoke;
+            color: hsl(28, 10%, 53%);
+
+            .hero-heading{
+                color: hsl(25, 47%, 15%);
+                font-weight: 700;
+                font-size: 32px;
+                margin-bottom: 1.5em;
+            }
+
+            .days-container{
+                .bars-spending-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: end;
+                    justify-content: space-between;
+                    border-bottom: 1px solid;
+
+                    .container{
+                        .percent{
+                            color: white;
+                            background-color: hsl(25, 47%, 15%);
+                            margin-bottom: 8px;
+                            font-size: 12px;
+                            padding: 3px;
+                            border-radius: 4px;
+                        }
+                    }
+
+                    .bar{
+                        border-radius: 5px;
+                        width: 30px;
+                        cursor: pointer;
+
+                        background-color: hsl(10, 79%, 65%);
+                        &:active{
+                            background-color: hsl(11, 63%, 75%);
+                        }
+                    }
+                    .sun{
+                        height: 50px;
+                    }
+                    .mon{
+                        height: 35px;
+                    }
+                    .tue{
+                        height: 70px;
+                    }
+                    .wed{
+                        height: 120px;
+                    }
+                    .thu{
+                        height: 60px;
+                    }
+                    .fri{
+                        height: 45px;
+                    }
+                    .sat{
+                        height: 100px;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    padding-top: .5em;
+                    padding-bottom: 1em;
+                }
+            }
+
+            .month-spending-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 1em;
+
+                .current-month-container{
+                    .month-spending{
+                        font-size: 32px;
+                        font-weight: 700;
+                        margin-top: 8px;
+                        color: hsl(25, 47%, 15%);
+                    }
+                }
+
+                .from-last-month-container{
+                    align-self: end;
+
+                    .percentage-spending{
+                        font-weight: 700;
+                        color: hsl(25, 47%, 15%);
+                    }
+                }
+            }
+        }
+    }
+}

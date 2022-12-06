@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(27deg, 66%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 5%;
+  font-size: 18px;
+  font-family: "DM Sans";
+}
+body main {
+  width: 420px;
+  max-width: 100%;
+}
+body main section.header {
+  background-color: hsl(10deg, 79%, 65%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px;
+}
+body main section.header .balance-section .balance {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+body main section.hero {
+  margin-top: 1em;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px whitesmoke;
+  color: hsl(28deg, 10%, 53%);
+}
+body main section.hero .hero-heading {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 1.5em;
+}
+body main section.hero .days-container .bars-spending-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+body main section.hero .days-container .bars-spending-container .container .percent {
+  color: white;
+  background-color: hsl(25deg, 47%, 15%);
+  margin-bottom: 8px;
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 4px;
+}
+body main section.hero .days-container .bars-spending-container .bar {
+  border-radius: 5px;
+  width: 30px;
+  cursor: pointer;
+  background-color: hsl(10deg, 79%, 65%);
+}
+body main section.hero .days-container .bars-spending-container .bar:active {
+  background-color: hsl(11deg, 63%, 75%);
+}
+body main section.hero .days-container .bars-spending-container .sun {
+  height: 50px;
+}
+body main section.hero .days-container .bars-spending-container .mon {
+  height: 35px;
+}
+body main section.hero .days-container .bars-spending-container .tue {
+  height: 70px;
+}
+body main section.hero .days-container .bars-spending-container .wed {
+  height: 120px;
+}
+body main section.hero .days-container .bars-spending-container .thu {
+  height: 60px;
+}
+body main section.hero .days-container .bars-spending-container .fri {
+  height: 45px;
+}
+body main section.hero .days-container .bars-spending-container .sat {
+  height: 100px;
+}
+body main section.hero .days-container span {
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+body main section.hero .month-spending-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+body main section.hero .month-spending-container .current-month-container .month-spending {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: hsl(25deg, 47%, 15%);
+}
+body main section.hero .month-spending-container .from-last-month-container {
+  align-self: end;
+}
+body main section.hero .month-spending-container .from-last-month-container .percentage-spending {
+  font-weight: 700;
+  color: hsl(25deg, 47%, 15%);
+}/*# sourceMappingURL=style.css.map */
