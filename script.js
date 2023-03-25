@@ -25,20 +25,22 @@ const SPENDINGS = [
     },
     {
       "day": "sat",
-      "amount": 43.28
+      // "amount": 43.28,
+      'name': 'edu'
     }
 ]
+
 
 //Variables
 const bars = document.querySelectorAll('.bar');
 //variables for daily spendings
-const sunSpending = document.getElementById('sun-spending');
-const monSpending = document.getElementById('mon-spending');
-const tueSpending = document.getElementById('tue-spending');
-const wedSpending = document.getElementById('wed-spending');
-const thuSpending = document.getElementById('thu-spending');
-const friSpending = document.getElementById('fri-spending');
-const satSpending = document.getElementById('sat-spending');
+const sunSpending = document.querySelector('.sun-spending');
+const monSpending = document.querySelector('.mon-spending');
+const tueSpending = document.querySelector('.tue-spending');
+const wedSpending = document.querySelector('.wed-spending');
+const thuSpending = document.querySelector('.thu-spending');
+const friSpending = document.querySelector('.fri-spending');
+const satSpending = document.querySelector('.sat-spending');
 
 //accessing each bar
 bars.forEach(bar =>{
@@ -47,46 +49,35 @@ bars.forEach(bar =>{
     bar.addEventListener('click', ()=> {
 
       //lighten the backgroundColor of the bar clicked
-      bar.style.backgroundColor= 'hsl(11, 63%, 75%)';
+      bar.parentElement.classList.toggle('active')
         
       //conditional statement for the displaying the amount spent per day for the last seven days
         if(bar.classList.contains('sun')){
           sunSpending.innerText= '$'+ SPENDINGS[0].amount;
-          sunSpending.classList.add('percent')
         }
         else if(bar.classList.contains('mon')){
           monSpending.innerText = '$'+ SPENDINGS[1].amount;
-          monSpending.classList.add('percent')
         }
         else if(bar.classList.contains('tue')){
           tueSpending.innerText = '$'+ SPENDINGS[2].amount;
-          tueSpending.classList.add('percent')
         }
         else if(bar.classList.contains('wed')){
           wedSpending.innerText = '$'+ SPENDINGS[3].amount;
-          wedSpending.classList.add('percent')
         }
         else if(bar.classList.contains('thu')){
           thuSpending.innerText = '$'+ SPENDINGS[4].amount;
-          thuSpending.classList.add('percent')
         }
         else if(bar.classList.contains('fri')){
           friSpending.innerText = '$'+ SPENDINGS[5].amount;
-          friSpending.classList.add('percent')
         }
         else {
           satSpending.innerText = '$'+ SPENDINGS[6].amount;
-          satSpending.classList.add('percent')
         }
     })
 });
 
 
 //making the backgroundColor of the current day's bar looks different from others.
-let day = new Date().getDay();
-let colorOfTheDay = bars[day];
+const day = new Date().getDay();
+const colorOfTheDay = bars[day];
 colorOfTheDay.style.backgroundColor = 'hsl(186, 34%, 60%)';
-//adding event listener for the current day's bar to lighten the backgroundColor once clicked
-bars[day].addEventListener('click', ()=> {
-  bars[day].style.backgroundColor= 'hsl(186, 18%, 69%)';
-})
