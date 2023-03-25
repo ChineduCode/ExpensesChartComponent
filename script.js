@@ -25,8 +25,7 @@ const SPENDINGS = [
     },
     {
       "day": "sat",
-      // "amount": 43.28,
-      'name': 'edu'
+      "amount": 43.28,
     }
 ]
 
