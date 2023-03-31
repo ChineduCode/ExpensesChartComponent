@@ -45,10 +45,10 @@ const satSpending = document.querySelector('.sat-spending');
 bars.forEach(bar =>{
      
   //adding event listener - click
-    bar.addEventListener('click', ()=> {
+    bar.addEventListener('mouseover', ()=> {
 
       //lighten the backgroundColor of the bar clicked
-      bar.parentElement.classList.toggle('active')
+      bar.parentElement.classList.add('active')
         
       //conditional statement for the displaying the amount spent per day for the last seven days
         if(bar.classList.contains('sun')){
@@ -72,6 +72,10 @@ bars.forEach(bar =>{
         else {
           satSpending.innerText = '$'+ SPENDINGS[6].amount;
         }
+    })
+
+    bar.addEventListener('mouseout', ()=>{
+      bar.parentElement.classList.remove('active')
     })
 });
 
